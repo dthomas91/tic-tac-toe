@@ -1,26 +1,52 @@
-
-h1 {
-  text-align: center;
+body {
+  background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
 }
 
-.reset-button {
-  margin-left: 47%;
-  margin-bottom: 15px;
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  align-items: center;
+  text-align: center;
+  position: relative;
+  font-family: sans-serif;
+  color: #B6B6B6;
+  text-decoration: underline;
+}
+
+.btn_box {
+  text-align: center;
+  margin: 20px;
+}
+
+.btn {
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 3px 3px 8px;
+  font-family: sans-serif;
+  color: #B6B6B6;
+  background-color: #090979;
 }
 
 .square {
   height: 100px;
   width: 100px;
-  border: 2px solid black;
+  border: 2px solid #B6B6B6;
   font-size: 4rem;
   text-align: center;
   justify-content: center;
   padding-top: 15px; 
+  border-radius: 4px;
 }
 
 .gameBoard {
   display: flex;
   flex-wrap: wrap;
   width: 320px;
-  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }

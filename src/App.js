@@ -82,12 +82,12 @@ const App = () => {
   }
 
   return (
-    <>
-      <h1>Tic Tac Toe</h1>
-      
-      <button onClick={handleReset}>Reset</button>
-      <div className='gameBoard'>
-      {squares.map((square, index) => {
+    <div className="page">
+      <div className="header">
+        <h1>Tic Tac Toe</h1>
+      </div>
+      <div className="gameBoard">
+        {squares.map((square, index) => {
           return (
             <Square
               square={square}
@@ -100,7 +100,12 @@ const App = () => {
           );
         })}
       </div>
-    </>
+      <div className="btn_box">
+        <button className="btn" onClick={handleReset}>
+          Reset
+        </button>
+      </div>
+    </div>
   );
 };
 
